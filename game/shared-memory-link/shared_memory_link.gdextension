@@ -1,0 +1,11 @@
+[configuration]
+
+entry_symbol = "shml_init"
+compatibility_minimum = "4.3"
+
+[libraries]
+
+; Godot will pick the debug library for debug builds/exports
+; and the release library for release exports.
+windows.debug.x86_64 = "bin/debug/shared_memory_link.windows.template_debug.x86_64.dll"
+windows.release.x86_64 = "bin/release/shared_memory_link.windows.template_release.x86_64.dll"

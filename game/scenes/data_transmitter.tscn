@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1qt1irhqqtjh"]
+
+[ext_resource type="Script" path="res://scripts/data_transmitter.gd" id="1_ahgyn"]
+
+[node name="DataTransmitter" type="Node"]
+script = ExtResource("1_ahgyn")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

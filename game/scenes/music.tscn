@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxamiobxucqoh"]
+
+[ext_resource type="AudioStream" uid="uid://bjx754nsc2xqi" path="res://assets/music/TG.mp3" id="1_q0kfr"]
+[ext_resource type="Script" path="res://scripts/music.gd" id="2_h4d26"]
+
+[node name="Music" type="AudioStreamPlayer2D"]
+process_mode = 3
+stream = ExtResource("1_q0kfr")
+script = ExtResource("2_h4d26")
